@@ -10,7 +10,7 @@ body {
     padding: 0;
     
     background-color: #141414;
-    background-image: ;
+    background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     
@@ -136,28 +136,47 @@ body {
 }
 
 .logo {
-    width: 270px;
+    width: 368px;
+    height: 204px;
     margin: 0 auto;
-    margin-bottom: 20px;
-    min-height: 120px;
+    margin-bottom: 25px;
+    
 }
 
 .features-row {    
-    margin-bottom: 35px;
-    padding: 5px
+    margin-bottom: 80px;
+    
 }
 
 .features-item {
     float: left;
     
-    width: 284px;
-    margin-right: 24px;
-    min-height: 150px;
+    width: 300px;
+    margin-right: 20px;
+    
+    text-align: center;
+   
 }
 
 .features-item:last-child {
     margin-right: 0;
 }
+
+.features-title {
+    position: relative;
+    
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-item p {
+    margin: 10px;
+}
+
+.features-title:after
 
 .index-content {
     margin-bottom: 20px;
