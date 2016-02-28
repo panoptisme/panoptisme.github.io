@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-circle {
+    width: 20px;
+    height: 20px;
+    background-position: -15px -15px;
+}
+
+.sprite-circle-dot {
+    width: 20px;
+    height: 20px;
+    background-position: -15px -65px;
+}
+
+.sprite-f {
+    width: 12px;
+    height: 22px;
+    background-position: -15px -115px;
+}
+
+.sprite-locked {
+    width: 15px;
+    height: 17px;
+    background-position: -15px -167px;
+}
+
+.sprite-login {
+    width: 18px;
+    height: 16px;
+    background-position: -15px -214px;
+}
+
+.sprite-person {
+    width: 15px;
+    height: 15px;
+    background-position: -15px -260px;
+}
+
+.sprite-square {
+    width: 20px;
+    height: 20px;
+    background-position: -15px -305px;
+}
+
+.sprite-t {
+    width: 21px;
+    height: 21px;
+    background-position: -15px -355px;
+}
+
+.sprite-vk {
+    width: 25px;
+    height: 16px;
+    background-position: -15px -406px;
+}
+
+.sprite-vk-black {
+    width: 25px;
+    height: 16px;
+    background-position: -15px -452px;
+}
+
+.sprite-vkf-black {
+    width: 12px;
+    height: 22px;
+    background-position: -15px -498px;
+}
+
+.sprite-vkinst-black {
+    width: 21px;
+    height: 21px;
+    background-position: -15px -550px;
+}
