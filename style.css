@@ -445,7 +445,7 @@ body {
     margin-right: 0;
 }
 
-.footer-copyright .btn{
+.footer-copyright .btn:hover{
     color: #000;
     background: #fff;
 }
