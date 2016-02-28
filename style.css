@@ -401,7 +401,7 @@ body {
 }
 
 .social-btn:hover {
-    background: #fff;
+    background: #fff url("img/sprite.png");
 }
 
 .social-btn-vk {
@@ -417,15 +417,15 @@ body {
 }
 
 .social-btn-vk:hover {
-    background-position: -6px -412px; 
+    background-position: -6px -438px; 
 }
 
 .social-btn-fb:hover {
-    background-position: 0px -105px; 
+    background-position: 0px -488px; 
 }
 
 .social-btn-inst:hover {
-    background-position: -3px -344px; 
+    background-position: -3px -539px; 
 
 }
 
