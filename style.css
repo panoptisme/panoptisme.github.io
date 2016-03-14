@@ -16,6 +16,12 @@ body {
     
 }
 
+.inner-page {
+    color: #000;
+    background:#f9f6f3 url("img/pattern_white.jpg") repeat;
+    
+}
+
 .clearfix:after {
     content: "";
     display: table;
@@ -24,9 +30,13 @@ body {
 
 .main-header {
     margin-bottom: 60px;
-    background: #000;
-    
+    background: #000;    
 }
+
+.inner-page .main-header {
+    margin-bottom: 55px;
+}
+
 
 .container {
     width: 940px;
@@ -134,6 +144,189 @@ body {
 
 .login:hover:before {
     opacity: 1;
+}
+
+.breadcrumbs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.breadcrumbs li {
+    position: relative;
+    
+    display: inline;
+    padding-right: 40px;
+}
+
+
+
+.breadcrumbs li:after {
+    content: "";
+    
+    position: absolute;
+    top: 6px;
+    left: 66px;
+    
+    display: block;
+        
+    width: 8px;
+    height: 8px;
+    
+    background: #000;
+    transform: rotate(45deg)
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumbs a:hover{
+    text-decoration: underline;
+}
+
+.breadcrumbs .current {
+    color: #aba9a7;
+}
+
+.breadcrumbs .current:after {
+    display: none;
+}
+
+.inner-content {
+    margin-bottom: 75px;
+}
+
+.inner-content h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.inner-content p {
+    margin: 14px 0;
+}
+
+.inner-content table {
+    border-collapse: collapse;
+}
+
+.inner-content td {
+    padding: 10px 15px;
+    border: 2px solid black;
+}
+
+.big-heading {
+    margin-top: 55px;
+    margin-bottom: 65px;
+    
+    text-align: center;
+}
+
+.big-heading h2{
+    position: relative;
+    
+    display: inline;
+    margin: 0;
+    padding: 0 25px;
+    
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    
+    z-index: 2;
+    background:#f9f6f3 url("img/pattern_white.jpg") repeat;
+}
+
+.big-heading:after {
+    content: "";
+    
+    position: relative;
+    top: -25px;
+    z-index: 1;
+    
+    display: block;
+    border-bottom: 2px solid black;
+}
+
+.custom-list-1 {
+    margin: 14px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.custom-list-1 li {
+    position: relative;
+    
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.custom-list-1 li:before {
+    content: "";
+    
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    
+    
+    
+    width: 8px;
+    height: 8px;
+    
+    background: #000;
+    transform: rotate(45deg);
+}
+
+.prices-table {
+    width: 100%;
+}
+
+.prices-table td{
+    width: 50%;
+}
+
+.prices-table td:last-child {
+    text-align: center;
+}
+
+.short-text {
+    padding-right: 80px;
+}
+
+.inner-content-columns {
+    margin:  60px 0;
+}
+
+.inner-content-column-left, .inner-content-column-right {
+    width: 460px;
+}
+
+.inner-content-column-left {
+    float: left;
+}
+
+.inner-content-column-right {
+    float: right;
+}
+
+.inner-content-column-left *:first-child {
+    margin-top: 0;
+}
+
+.inner-content-column-left *:last-child {
+    margin-bottom: 0;
+}
+
+.inner-content-column-right *:first-child {
+    margin-top: 0;
+}
+
+.inner-content-column-right *:last-child {
+    margin-bottom: 0;
 }
 
 .main-container {
@@ -247,6 +440,10 @@ body {
 
 .news-preview time {
     text-transform: none;
+    font-family: "Georgia Italic", sans-serif;
+    font-style: italic;
+    
+
 }
 
 .btn {
@@ -355,11 +552,25 @@ body {
     width: 100%;
 }
 
+.inner-page-title {
+    margin-bottom: 55px;
+}
+
+.inner-page-title h1{
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    
+    font-size: 30px;
+    line-height: 42px;
+}
+
 .main-footer {
     margin-top: 60px;
     padding-top: 60px;
     padding-bottom: 40px;
     
+    color: #fff;
     background: #252525 url("img/pattern_black.jpg")
 } 
 
