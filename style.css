@@ -341,12 +341,12 @@ box-shadow: 3px 4px 25px 0px rgba(0, 1, 1, 0.3);
 .catalog-item-price-left {
     display: inline-block;
     line-height: 43px;
-    
+    width: 78px;
     font-size: 14px;    
     background: #e5e5e5; 
     
     padding-left: 29px;
-    padding-right: 25px; 
+    
     
 }
 
