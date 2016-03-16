@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>   
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>      
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Лучший барбершоп в Санкт-Петербурге">
   </head>
@@ -25,7 +25,7 @@
               <a href="price.html">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="shop.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -136,5 +136,24 @@
         </section>
       </div>
     </footer>
+    
+    <div class="modal-content">
+      <div class="modal-content-close">закрыть</div>
+        <h2 class="modal-content-title">Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль.</p>
+        <form class="login-form" action="/echo" method="post">
+            <input type="text" class="icon-user" name="login" placeholder="Логин" required>
+            <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+            <input type="checkbox" name="remember" id="remember-me">
+            <label for="remember-me">Запомните меня</label>
+            <a href="#" class="restore">Я забыл пароль!</a>
+            <button type="submit" class="btn">Войти</button>
+        </form>
+    </div>  
+      
+    <div class="modal-content-map">
+      <div class="modal-content-close">закрыть</div>
+    </div>  
+      
   </body>
 </html>
