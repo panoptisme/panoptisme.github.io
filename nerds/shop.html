@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NЁRDS</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,500,100&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>      
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Лучшая дизайн-студия в Краснодаре">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container clearfix">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" width="139" height="56" alt="NЁRDS»"></a>
+        </div>
+        <nav class="main-navigation">            
+          <ul>
+            <li>
+              <a href="index.html">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li class="active">
+              <a>Магазин</a> 
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>          
+        </nav> 
+        <div class="basket">
+             <a href="#"><i class="icon-basket"></i>Корзина</a> 
+        </div>  
+      </div>
+      <div class="banner">
+          <h1 class="banner-heading">Добро пожаловать в магазин<br> готовых макетов</h1>
+      </div>    
+    </header>
+      
+      
+      <div class="container main-container" id="container">        
+        
+      <div class="shop-content clearfix">
+        <div class="sidebar">
+            <div class="catalog-forms">
+                <form class="catalog-form">
+                <div class="price-filter">
+                  <h2>Стоимость:</h2> 
+                  <div class="range-controls">
+                    <div class="scale"><div style="width:70%" class="bar"></div></div>    
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>    
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price" for="min-price">от <input id="min-price" type="text" value="0"></label>
+                    <label class="max-price" for="max-price">до <input id="max-price" type="text" value="15 000"></label>  
+                  </div>                    
+                </div>
+                  <h2>Сетка:</h2>    
+                    <ul>
+                        <li>  
+                          <input type="radio" name="type" value="type-1" id="adaptive" checked>
+                          <label for="adaptive">Адаптивная</label>
+                        </li>
+                        <li>  
+                          <input type="radio" name="type" value="type-2" id="fixed">    
+                          <label for="fixed">Фиксированная</label>
+                        </li>
+                        <li>  
+                          <input type="radio" name="type" value="type-3" id="rubber"> 
+                          <label for="rubber">Резиновая</label>
+                        </li>
+                    </ul>
+                    
+                    <h2>Особенности:</h2>
+                      <ul>
+                        <li><input type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label></li>            
+
+                        <li><input type="checkbox" name="advantanges" id="advantanges"><label for="advantanges">Блок преимуществ</label></li>
+
+                        <li><input type="checkbox" name="news" id="news" checked><label for="news">Новости</label></li>
+
+                        <li><input type="checkbox" name="gallery" id="gallery"><label for="gallery">Галерея</label></li>
+
+                        <li><input type="checkbox" name="basket" id="basket"><label for="basket">Корзина</label></li>
+                     </ul>                     
+                </form>       
+            </div>
+          </div>
+        <section class="catalog">
+          <div class="item-filter clearfix">
+            <div class="item-filter-row">  
+            <ul>
+                <li><h3>Сортировать:</h3></li>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По функционалу</a></li>                
+            </ul>
+            </div>
+            <div class="item-filter-controls">            
+              <a href="#" class="down active"></a>
+              <a href="#" class="up"></a>
+            </div>    
+          </div>
+          <div class="catalog-items">
+            <article class="catalog-item"><i></i><img src="img/catalog-item-1.jpg" width="240px" height="240px"><div class="item-hover"><h4 class="item-title">Aviator</h4><p class="item-price">Интернет-магазин с личным кабинетом</p><a class="btn red" title="Купить">12 000 р.</a></div></article>
+            <article class="catalog-item"><i></i><img src="img/catalog-item-2.jpg" width="240px" height="240px"><div class="item-hover"><h4 class="item-title">Sunset</h4><p class="item-price">Интернет-магазин с личным кабинетом</p><a class="btn red" title="Купить">12 000 р.</a></div></article>  
+            <article class="catalog-item"><i></i><img src="img/catalog-item-3.jpg" width="240px" height="240px"><div class="item-hover"><h4 class="item-title">Forte</h4><p class="item-price">Интернет-магазин с личным кабинетом</p><a class="btn red" title="Купить">12 000 р.</a></div></article>
+            <article class="catalog-item"><i></i><img src="img/catalog-item-4.jpg" width="240px" height="240px"><div class="item-hover"><h4 class="item-title">Marquee</h4><p class="item-price">Интернет-магазин с личным кабинетом</p><a class="btn red" title="Купить">12 000 р.</a></div></article>
+            <article class="catalog-item"><i></i><img src="img/catalog-item-5.jpg" width="240px" height="240px"><div class="item-hover"><h4 class="item-title">Avenue</h4><p class="item-price">Интернет-магазин с личным кабинетом</p><a class="btn red" title="Купить">12 000 р.</a></div></article>  
+            <article class="catalog-item"><i></i><img src="img/catalog-item-6.jpg" width="240px" height="240px"><div class="item-hover"><h4 class="item-title">Dovetail</h4><p class="item-price">Интернет-магазин с личным кабинетом</p><a class="btn red" title="Купить">12 000 р.</a></div></article>
+              
+            <div class="pages">
+              <a class="btn current">1</a>
+              <a href="#" class="btn">2</a>
+              <a href="#" class="btn">3</a>
+              <a href="#" class="btn next">Следующая</a>    
+            </div>  
+          </div>    
+        </section>
+      </div>   
+    </div>  
+      
+      
+       
+        <div class="map" id="map">
+<!--        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.089980494811!2d38.942317816108435!3d45.04339587909838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f1371a61747%3A0xb65bcfa78a9cfddd!2z0YPQuy4g0JLQvtC70L7QtNC4INCT0L7Qu9C-0LLQsNGC0L7Qs9C-LCAxMDAsINCa0YDQsNGB0L3QvtC00LDRgCwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksIDM1MDAwNA!5e0!3m2!1sru!2sru!4v1458648254475" style="border:0" ></iframe>-->
+            
+        </div> 
+       <footer class="container main-footer">   
+        <div class="contacts">
+              <h3><strong>NЁRDS</strong> Design Studio</h3>
+              <p>350000, Краснодар, ул.&nbsp;Головатого, 100</p>
+              
+              <p>тел. +7(861)275-75-75</p>
+              <a href="#" class="btn red">Напишите нам</a>  
+            </div>  
+        <div class="container clearfix">  
+            <section class="footer-social">              
+              <a href="#" class="social-btn"><i class="icon-vk"></i></a>
+                <a href="#" class="social-btn"><i class="icon-facebook"></i></a>
+                <a href="#" class="social-btn"><i class="icon-instagramm"></i></a>
+            </section>
+            <section class="friendship">
+              <h2>Давайте дружить, это выгодно!</h2>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </section>
+      </div>
+    </footer>
+      
+    <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
+ 
+<script> 
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(45.0433959, 38.94450649999999),
+            zoom: 19,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: true,
+            panControl: true,
+            streetViewControl: true,
+            draggable : true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [
+  {
+    "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#d3d3d3" }
+    ]
+  },{
+    "featureType": "transit",
+    "stylers": [
+      { "color": "#808080" },
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#b3b3b3" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#ffffff" }
+    ]
+  },{
+    "featureType": "road.local",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#ffffff" },
+      { "weight": 1.8 }
+    ]
+  },{
+    "featureType": "road.local",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      { "color": "#d7d7d7" }
+    ]
+  },{
+    "featureType": "poi",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#ebebeb" }
+    ]
+  },{
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#a7a7a7" }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#ffffff" }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#ffffff" }
+    ]
+  },{
+    "featureType": "landscape",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#efefef" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#696969" }
+    ]
+  },{
+    "featureType": "administrative",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#737373" }
+    ]
+  },{
+    "featureType": "poi",
+    "elementType": "labels.icon",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "poi",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      { "color": "#d6d6d6" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+  },{
+    "featureType": "poi",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#dadada" }
+    ]
+  }
+],
+        }
+        var mapElement = document.getElementById('map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+['NЁRDS', 'undefined', 'undefined', 'undefined', 'undefined', 45.0433883193149,38.944688890213, 'http://i.imgur.com/Me8Ncxq.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';     }
+
+}
+</script>
+<style>
+    
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+</style>
+
+
+      
+  </body>
+</html>          
+      
+          
+          
