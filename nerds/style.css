@@ -667,6 +667,10 @@ body {
     display: block;
 }
 
+.catalog-item:hover {
+    background: #797979;
+}
+
 .pages {
     margin-bottom: 50px;
 }
