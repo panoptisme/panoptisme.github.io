@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
  @font-face {
   font-family: 'symbols-nerds';
@@ -342,6 +342,7 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     margin-top: 0;
+    margin-bottom: 18px;
 }
 
 .price-filter {
