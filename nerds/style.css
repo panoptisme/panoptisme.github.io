@@ -1004,10 +1004,155 @@ body {
 .friendship h2 {
     font-size: 36px;
     line-height: 36px;
-    margin: 0;
-    
+    margin: 0;    
 }
 
 .friendship p {
     margin-top: 6px;
+}
+
+.modal-content {
+    display: none;
+    top: 0;
+    left: 50%;
+    position: absolute; 
+    margin: 0 auto;
+    width: 630px;    
+    height: 415px;
+    margin-top: 1650px;
+    margin-left: -320px;
+    z-index: 1001;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,.7)
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.login-form {    
+    margin: 0 auto;
+    margin-top: 53px;
+    width: 460px;
+    height: 315px;
+}
+
+.login-form input:hover, .login-form textarea:hover{
+    border: 2px solid #a2a9ac;
+    border-radius: 5px;    
+}
+
+.login-form input:focus, .login-form textarea:focus{
+    border: 2px solid #57bffb;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.login-form label {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-left: 1px;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.user-fields {
+    margin-bottom: 20px;
+}
+
+.user-fields input{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 5px;
+    width: 201px;
+    height: 34px;
+    border: 2px solid #d7dcde;
+    border-radius: 5px; 
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+
+.user-fields ::-webkit-input-placeholder {
+    color: #000;
+}
+
+.user-fields ::-moz-placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.user-fields :-ms-input-placeholder {
+    color: #000;
+}
+
+.login-field {
+    float: left;
+}
+
+.e-mail-field {
+    float: right;    
+}
+
+.text-field textarea {
+    resize: none;
+    margin: 0;
+    margin-bottom: 42px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 12px;
+    width: 441px;
+    height: 95px;
+    border: 2px solid #d7dcde;
+    border-radius: 5px; 
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+
+.text-field ::-webkit-input-placeholder {
+    color: #000;
+}
+
+.text-field ::-moz-placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.text-field :-ms-input-placeholder {
+    color: #000;
+}
+
+.form-btns {     
+}
+
+.form-btns .btn {
+    width: 140px;    
+}
+
+.form-btns .btn.red {
+    margin-right: 16px;
+}
+
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
 }

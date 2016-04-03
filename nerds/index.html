@@ -147,7 +147,7 @@
               <p>350000, Краснодар, ул.&nbsp;Головатого, 100</p>
               
               <p>тел. +7(861)275-75-75</p>
-              <a href="#" class="btn red">Напишите нам</a>  
+              <a href="#" class="btn red write-us">Напишите нам</a>  
             </div>  
         <div class="container clearfix">  
             <section class="footer-social">              
@@ -162,192 +162,240 @@
       </div>
     </footer>
       
+    <div class="modal-content">
+      <form class="login-form" action="/echo" method="post">
+        <div class="user-fields clearfix">
+          <div class="login-field">    
+            <label for=login>Ваше имя:</label>  
+            <input type="text" name="login" placeholder="Представьтесь, пожалуйста" id="login">
+          </div>
+          <div class="e-mail-field">    
+            <label for=e-mail>Ваш e-mail:</label>  
+            <input type="text" name="e-mail" placeholder="Для отправки ответа" id="e-mail">
+          </div>      
+        </div>
+        <div  class="text-field">  
+            <label for=text>Текст письма:</label>  
+            <textarea type="text" name="text" placeholder="В свободной форме" id="text"></textarea>
+        </div>    
+        <div class="form-btns"> 
+            <a href="#" class="btn red">Отправить</a>
+            <a href="#" class="btn modal-content-close">Отмена</a>
+        </div>     
+      </form>
+    </div>  
+    
+ 
+    <script>
+        var link = document.querySelector(".write-us")
+        var popup = document.querySelector(".modal-content");
+        var close = document.querySelector(".modal-content-close");
+      
+        link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        if (storage) {
+          login.value = storage;
+          password.focus();
+        } else {
+          login.focus();
+        }
+      });
+        
+        close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+        
+    </script>      
+      
+      
     <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
  
-<script> 
-    google.maps.event.addDomListener(window, 'load', init);
-    var map;
-    function init() {
-        var mapOptions = {
-            center: new google.maps.LatLng(45.0433959, 38.94450649999999),
-            zoom: 19,
-            zoomControl: true,
-            zoomControlOptions: {
-                style: google.maps.ZoomControlStyle.DEFAULT,
-            },
-            disableDoubleClickZoom: true,
-            mapTypeControl: true,
-            mapTypeControlOptions: {
-                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-            },
-            scaleControl: true,
-            scrollwheel: true,
-            panControl: true,
-            streetViewControl: true,
-            draggable : true,
-            overviewMapControl: true,
-            overviewMapControlOptions: {
-                opened: false,
-            },
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            styles: [
-  {
-    "featureType": "water",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#d3d3d3" }
-    ]
-  },{
-    "featureType": "transit",
-    "stylers": [
-      { "color": "#808080" },
-      { "visibility": "off" }
-    ]
-  },{
-    "featureType": "road.highway",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      { "visibility": "on" },
-      { "color": "#b3b3b3" }
-    ]
-  },{
-    "featureType": "road.highway",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#ffffff" }
-    ]
-  },{
-    "featureType": "road.local",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "visibility": "on" },
-      { "color": "#ffffff" },
-      { "weight": 1.8 }
-    ]
-  },{
-    "featureType": "road.local",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      { "color": "#d7d7d7" }
-    ]
-  },{
-    "featureType": "poi",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "visibility": "on" },
-      { "color": "#ebebeb" }
-    ]
-  },{
-    "featureType": "administrative",
-    "elementType": "geometry",
-    "stylers": [
-      { "color": "#a7a7a7" }
-    ]
-  },{
-    "featureType": "road.arterial",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#ffffff" }
-    ]
-  },{
-    "featureType": "road.arterial",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#ffffff" }
-    ]
-  },{
-    "featureType": "landscape",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "visibility": "on" },
-      { "color": "#efefef" }
-    ]
-  },{
-    "featureType": "road",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      { "color": "#696969" }
-    ]
-  },{
-    "featureType": "administrative",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      { "visibility": "on" },
-      { "color": "#737373" }
-    ]
-  },{
-    "featureType": "poi",
-    "elementType": "labels.icon",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "featureType": "poi",
-    "elementType": "labels",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "featureType": "road.arterial",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      { "color": "#d6d6d6" }
-    ]
-  },{
-    "featureType": "road",
-    "elementType": "labels.icon",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-  },{
-    "featureType": "poi",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#dadada" }
-    ]
-  }
-],
-        }
-        var mapElement = document.getElementById('map');
-        var map = new google.maps.Map(mapElement, mapOptions);
-        var locations = [
-['NЁRDS', 'undefined', 'undefined', 'undefined', 'undefined', 45.0433883193149,38.944688890213, 'http://i.imgur.com/Me8Ncxq.png']
-        ];
-        for (i = 0; i < locations.length; i++) {
-			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
-			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
-			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
-           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
-           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
-            marker = new google.maps.Marker({
-                icon: markericon,
-                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
-                map: map,
-                title: locations[i][0],
-                desc: description,
-                tel: telephone,
-                email: email,
-                web: web
-            });
-link = '';     }
+    <script> 
+        google.maps.event.addDomListener(window, 'load', init);
+        var map;
+        function init() {
+            var mapOptions = {
+                center: new google.maps.LatLng(45.0433959, 38.94450649999999),
+                zoom: 19,
+                zoomControl: true,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.DEFAULT,
+                },
+                disableDoubleClickZoom: true,
+                mapTypeControl: true,
+                mapTypeControlOptions: {
+                    style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                },
+                scaleControl: true,
+                scrollwheel: true,
+                panControl: true,
+                streetViewControl: true,
+                draggable : true,
+                overviewMapControl: true,
+                overviewMapControlOptions: {
+                    opened: false,
+                },
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [
+      {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#d3d3d3" }
+        ]
+      },{
+        "featureType": "transit",
+        "stylers": [
+          { "color": "#808080" },
+          { "visibility": "off" }
+        ]
+      },{
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          { "visibility": "on" },
+          { "color": "#b3b3b3" }
+        ]
+      },{
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#ffffff" }
+        ]
+      },{
+        "featureType": "road.local",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "visibility": "on" },
+          { "color": "#ffffff" },
+          { "weight": 1.8 }
+        ]
+      },{
+        "featureType": "road.local",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          { "color": "#d7d7d7" }
+        ]
+      },{
+        "featureType": "poi",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "visibility": "on" },
+          { "color": "#ebebeb" }
+        ]
+      },{
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+          { "color": "#a7a7a7" }
+        ]
+      },{
+        "featureType": "road.arterial",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#ffffff" }
+        ]
+      },{
+        "featureType": "road.arterial",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#ffffff" }
+        ]
+      },{
+        "featureType": "landscape",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "visibility": "on" },
+          { "color": "#efefef" }
+        ]
+      },{
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          { "color": "#696969" }
+        ]
+      },{
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          { "visibility": "on" },
+          { "color": "#737373" }
+        ]
+      },{
+        "featureType": "poi",
+        "elementType": "labels.icon",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },{
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },{
+        "featureType": "road.arterial",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          { "color": "#d6d6d6" }
+        ]
+      },{
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },{
+      },{
+        "featureType": "poi",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#dadada" }
+        ]
+      }
+    ],
+            }
+            var mapElement = document.getElementById('map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var locations = [
+    ['NЁRDS', 'undefined', 'undefined', 'undefined', 'undefined', 45.0433883193149,38.944688890213, 'http://i.imgur.com/Me8Ncxq.png']
+            ];
+            for (i = 0; i < locations.length; i++) {
+                if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+                if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+                if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+               if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+               if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+                marker = new google.maps.Marker({
+                    icon: markericon,
+                    position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                    map: map,
+                    title: locations[i][0],
+                    desc: description,
+                    tel: telephone,
+                    email: email,
+                    web: web
+                });
+    link = '';     }
 
-}
-</script>
-<style>
-    
-    .gm-style-iw * {
-        display: block;
-        width: 100%;
     }
-    .gm-style-iw h4, .gm-style-iw p {
-        margin: 0;
-        padding: 0;
-    }
-    .gm-style-iw a {
-        color: #4272db;
-    }
-</style>
+    </script>
+    <style>
+
+        .gm-style-iw * {
+            display: block;
+            width: 100%;
+        }
+        .gm-style-iw h4, .gm-style-iw p {
+            margin: 0;
+            padding: 0;
+        }
+        .gm-style-iw a {
+            color: #4272db;
+        }
+    </style>
 
 
       
