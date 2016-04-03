@@ -1015,11 +1015,11 @@ body {
     display: none;
     top: 0;
     left: 50%;
-    position: absolute; 
+    position: fixed; 
     margin: 0 auto;
     width: 630px;    
     height: 415px;
-    margin-top: 1650px;
+    margin-top: 650px;
     margin-left: -320px;
     z-index: 1001;
     background: #fff;
