@@ -182,7 +182,7 @@ body {
     float: right;
     background-image: url(../img/index-content-photo-1.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;    
+    background-size: cover;    
 }
 
 .features-row {
