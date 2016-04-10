@@ -182,7 +182,7 @@ body {
     float: right;
     background-image: url(../img/index-content-photo-1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: 100% auto;    
 }
 
 .features-row {
@@ -307,6 +307,15 @@ body {
     font-weight: 700;
     text-decoration: none;
     color: #000;
+    transition: color .45s ease;
+}
+
+.hashtag a:hover {   
+    color: #81b3d2;
+}
+
+.hashtag a:active {   
+    color: #b2b2b2;
 }
 
 .footer-social {
@@ -319,23 +328,106 @@ body {
 .social-btn {
     display: inline-block;
     vertical-align: top;
-    width: 43px;
-    height: 43px;
+    width: 48px;
+    height: 48px;
     
     font-size: 0;
     text-decoration: none;
-    background: #81b3d2;
+    background: #81b3d2 url("../img/spritesheet.png");
     margin-right: 1px;
+    transition: background-color .45s ease;
+}
+
+.social-btn:hover {
+    background-color: #669ec0;
+}
+
+.social-btn:active {
+    background-color: #5496bd;
+}
+
+.social-btn-tw {
+    background-position: 200px 0px;
+}
+
+.social-btn-fb {
+    background-position: 805px -3px;
+}
+
+.social-btn-youtube {
+    background-position: 49px 1px;
+}
+
+.social-btn-tw:hover {
+    background-position: 249px 0px;
+}
+
+.social-btn-fb:hover {
+    background-position: 844px -3px;
+}
+
+.social-btn-youtube:hover {
+    background-position: 99px 1px;
+}
+
+.social-btn-tw:active {
+    background-position: 298px 0px;
+}
+
+.social-btn-fb:active {
+    background-position: 883px -3px;
+}
+
+.social-btn-youtube:active {
+    background-position: 149px 1px;
 }
 
 .footer-copyright {
     float: right;
     width: 33.34%;
     text-align: center;
-    margin-top: 27px;
+    margin-top: 43px;       
 }
 
-.footer-copyright {
+.footer-copyright span{
     font-size: 14px;
-    line-height: 26px;
+    line-height: 26px;    
 }
+.footer-copyright span, .footer-copyright a {
+    display: inline-block;    
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.footer-copyright a {    
+    width: 30px;
+    height: 33px;
+    text-decoration: none;
+}
+
+.footer-copyright .logo-1 {
+    background: url("../img/spritesheet.png");
+    background-position: -14px -14px;
+}
+
+.footer-copyright .logo-2 {
+    background: url("../img/spritesheet.png") ;
+    background-position: 748px -16px;
+}
+
+.footer-copyright .logo-1:hover {   
+    background-position: -128px -14px;
+}
+
+.footer-copyright .logo-2:hover {
+    background-position: 634px -16px;
+}
+
+.footer-copyright .logo-1:active {   
+    background-position: -71px -14px;
+}
+
+.footer-copyright .logo-2:active {
+    background-position: 691px -16px;
+}
+
